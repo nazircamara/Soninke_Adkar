@@ -45,7 +45,7 @@ body.dark-mode {
 
 body {
     margin: 0;
-    font-family: "Vazirmatn", "Amiri", "Noto Naskh Arabic", "Segoe UI", "Tahoma", sans-serif;
+    font-family: 'Vazirmatn', 'Tahoma', 'Arial', 'Segoe UI', sans-serif;
     background-color: var(--body-bg);
     color: var(--text-main);
     min-height: 100vh;
@@ -98,10 +98,6 @@ body {
     padding: 12px 20px; max-width: 800px; margin: 0 auto;
 }
 
-.header-actions {
-    display: flex; align-items: center; gap: 10px;
-}
-
 .logo { display: flex; align-items: center; gap: 8px; cursor: pointer; transition: var(--transition); }
 .logo-emoji { font-size: 1.8rem; }
 .logo-text { font-weight: 800; font-size: 1.4rem; color: var(--primary); }
@@ -127,16 +123,6 @@ body {
     opacity: 0.2;
 }
 
-.offline-indicator {
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: rgba(239, 68, 68, 0.15);
-    color: #ef4444;
-    font-weight: 700;
-    font-size: 0.7rem;
-    border: 1px solid rgba(239, 68, 68, 0.3);
-}
-
 /* --- Progress Bar --- */
 .progress-container { width: 100%; height: 4px; background: var(--border-color); }
 .progress-bar { width: 0%; height: 100%; background: var(--success); transition: width 0.4s ease; }
@@ -148,126 +134,10 @@ body {
 .sub-nav-item {
     background: none; border: none; font-weight: 600; font-size: 0.85rem;
     color: var(--text-muted); cursor: pointer; transition: var(--transition);
-    display: inline-flex; align-items: center; gap: 6px;
 }
 .sub-nav-item:hover { color: var(--text-main); }
-.sub-nav-item.active { color: var(--primary); }
-.sub-nav-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-.sub-nav-icon svg { width: 18px; height: 18px; }
-.sub-nav-icon-img { width: 18px; height: 18px; object-fit: contain; border-radius: 50%; }
 
 .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
-
-.featured-card {
-    margin: 6px 0 18px;
-}
-
-.quran-section {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.surah-container {
-    padding: 20px;
-    margin-bottom: 16px;
-    text-align: right;
-}
-
-.quran-heading {
-    font-size: 1.3rem;
-    font-weight: 800;
-    margin-bottom: 12px;
-    color: var(--text-main);
-}
-
-.quran-words {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    line-height: 2.4;
-}
-
-.ayah-text {
-    display: inline-block;
-    padding: 6px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: var(--transition);
-    font-family: "Amiri", "Noto Naskh Arabic", serif;
-    font-size: 1.45rem;
-    color: var(--text-main);
-}
-
-.ayah-text:hover {
-    background: rgba(79, 70, 229, 0.12);
-}
-
-.ayah-text.playing,
-.playing {
-    background: rgba(79, 70, 229, 0.22);
-    color: var(--primary);
-}
-
-.list-toolbar {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    gap: 10px;
-    align-items: center;
-    margin: 16px 0 10px;
-}
-
-.search-wrapper {
-    width: 100%;
-}
-
-.search-wrapper input {
-    width: 100%;
-    padding: 10px 14px;
-    border-radius: 14px;
-    border: 1px solid var(--border-color);
-    background: var(--card-bg);
-    color: var(--text-main);
-    font-size: 0.85rem;
-    outline: none;
-    transition: var(--transition);
-}
-
-.search-wrapper input:focus {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
-}
-
-.ghost-btn {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    color: var(--text-main);
-    padding: 8px 12px;
-    border-radius: 14px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: var(--transition);
-    white-space: nowrap;
-}
-
-.ghost-btn:hover { background: var(--primary); color: white; }
-
-.ghost-btn.danger {
-    border-color: rgba(239, 68, 68, 0.4);
-    color: #ef4444;
-}
-
-.ghost-btn.danger:hover { background: #ef4444; color: white; }
-
-.ghost-btn.active {
-    background: var(--primary);
-    color: white;
-}
 
 .card {
     background: var(--card-bg); border-radius: 24px;
@@ -283,13 +153,6 @@ body {
 }
 .category-card:active { transform: scale(0.98); }
 .category-card .icon { font-size: 3rem; margin-bottom: 12px; }
-.icon-image {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-bottom: 12px;
-}
 
 /* Home Preview Button */
 .home-audio-btn {
@@ -300,42 +163,17 @@ body {
 .home-audio-btn:hover { background: var(--primary); color: white; }
 
 /* --- Athkar List & Buttons --- */
-.athkar-card { padding: 25px; margin-bottom: 18px; animation: fadeIn 0.5s ease; position: relative; }
+.athkar-card { padding: 25px; margin-bottom: 18px; animation: fadeIn 0.5s ease; }
 
 .intro-text {
-    font-family: "Amiri", "Noto Naskh Arabic", serif; font-size: 1.2rem; color: var(--primary);
+    font-family: 'Amiri', 'Vazirmatn', 'Times New Roman', serif; font-size: 1.2rem; color: var(--primary);
     margin-bottom: 15px; font-weight: 700; text-align: center;
     border-bottom: 1px solid var(--border-color); padding-bottom: 10px;
 }
 
 .arabic-text {
-    font-family: "Amiri", "Noto Naskh Arabic", serif; font-size: 1.6rem;
+    font-family: 'Amiri', 'Vazirmatn', 'Times New Roman', serif; font-size: 1.6rem;
     line-height: 2.2; text-align: center; direction: rtl;
-}
-
-.favorite-btn {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 999px;
-    padding: 6px 10px;
-    font-size: 0.75rem;
-    cursor: pointer;
-    transition: var(--transition);
-    color: var(--text-main);
-}
-
-html[dir="ltr"] .favorite-btn {
-    right: auto;
-    left: 12px;
-}
-
-.favorite-btn.active {
-    background: #f59e0b;
-    color: #111827;
-    border-color: rgba(245, 158, 11, 0.5);
 }
 
 /* Triple Button Action Row */
@@ -358,13 +196,6 @@ html[dir="ltr"] .favorite-btn {
 .count-btn.done { background: var(--success); box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2); }
 .completed { opacity: 0.5; transform: scale(0.98); }
 
-.empty-state {
-    text-align: center;
-    color: var(--text-muted);
-    padding: 30px 10px;
-    font-size: 0.9rem;
-}
-
 /* --- Footer --- */
 .app-footer {
     margin-top: 60px; padding: 50px 20px; background: var(--footer-bg);
@@ -377,12 +208,6 @@ html[dir="ltr"] .favorite-btn {
 
 /* Utilities */
 .hidden { display: none !important; }
-.text-rtl { direction: rtl; }
-
-@media (max-width: 520px) {
-    .list-toolbar { grid-template-columns: 1fr 1fr; }
-    .list-toolbar .search-wrapper { grid-column: 1 / -1; }
-}
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
