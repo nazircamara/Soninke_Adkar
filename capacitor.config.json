@@ -1,11 +1,6 @@
 {
-  "appId": "com.nazir.athkar",
-  "appName": "Athkar",
+  "appId": "com.soninke.adkaar",
+  "appName": "Soninke Adkaar",
   "webDir": "www",
-  "plugins": {
-    "SplashScreen": {
-      "launchShowDuration": 3000,
-      "launchAutoHide": true
-    }
-  }
+  "bundledWebRuntime": false
 }

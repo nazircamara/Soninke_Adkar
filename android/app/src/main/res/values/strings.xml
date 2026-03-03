@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Athkar</string>
-    <string name="title_activity_main">Athkar</string>
-    <string name="package_name">com.nazir.athkar</string>
-    <string name="custom_url_scheme">com.nazir.athkar</string>
+    <string name="app_name">Soninke Adkaar</string>
+    <string name="title_activity_main">Soninke Adkaar</string>
+    <string name="package_name">com.soninke.adkaar</string>
+    <string name="custom_url_scheme">com.soninke.adkaar</string>
 </resources>

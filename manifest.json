@@ -1,19 +1,20 @@
 {
-    "name": "Athkar App",
-    "short_name": "Athkar",
-    "description": "Daily Athkar with offline audio playback.",
-    "start_url": "./",
-    "scope": "./",
-    "display": "standalone",
-    "theme_color": "#6366f1",
-    "background_color": "#f8fafc",
-    "orientation": "portrait",
-    "icons": [
-        {
-            "src": "./icon.jpg",
-            "sizes": "512x512",
-            "type": "image/jpeg",
-            "purpose": "any maskable"
-        }
-    ]
+  "name": "أذكاري | Athkar App",
+  "short_name": "أذكاري",
+  "description": "Daily athkar with offline audio and text.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#4f46e5",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    { "src": "icons/icon-48.webp", "sizes": "48x48", "type": "image/webp" },
+    { "src": "icons/icon-72.webp", "sizes": "72x72", "type": "image/webp" },
+    { "src": "icons/icon-96.webp", "sizes": "96x96", "type": "image/webp" },
+    { "src": "icons/icon-128.webp", "sizes": "128x128", "type": "image/webp" },
+    { "src": "icons/icon-192.webp", "sizes": "192x192", "type": "image/webp" },
+    { "src": "icons/icon-256.webp", "sizes": "256x256", "type": "image/webp" },
+    { "src": "icons/icon-512.webp", "sizes": "512x512", "type": "image/webp" }
+  ]
 }
