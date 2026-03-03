@@ -78,7 +78,7 @@ const database = {
         { id: 304, intro: "بعد الاعتدال قائماً: ", text: "رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ.", target: 1, audio: "audios/prayer_4.mp3", audio2: "audios2/recitation_304.mp3" }, 
         { id: 305, intro: "عند السجود: ", text: "سُبْحَانَ رَبِّيَ الأَعْلَى", target: 3, audio: "audios/prayer_5.mp3", audio2: "audios2/recitation_305.mp3" }, 
         { id: 306, intro: "عند الجلوس بين السجدتين: ", text: "رَبِّ اغْفِرْ لِي.", target: 3, audio: "audios/prayer_6.mp3", audio2: "audios2/recitation_306.mp3" }, 
-        { id: 307, intro: "في التشهد الأول: ", text: "التَّحِيَّاتُ لِلَّهِ وَالصَّلَواتُ وَالطَّيِّباتُ، السَّلامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ، السَّلامُ عَلَيْنا وَعَلى عِبادِ اللهِ الصّالِحينَ، أَشْهَدُ أَنْ لا إِلهَ إِلاَّ اللهُ وَأَشْهَدُ أَنْ لا إِلهَ إِلاَّ اللهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسولُهُ.", target: 1, audio: "audios/prayer_7.mp3", audio2: "audios2/recitation_307.mp3" }, 
+        { id: 307, intro: "في التشهد الأول: ", text: "التَّحِيَّاتُ لِلَّهِ وَالصَّلَواتُ وَالطَّيِّباتُ، السَّلامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللهِ وَبَرَكاتُهُ، السَّلامُ عَلَيْنا وَعَلى عِبادِ اللهِ الصّالِحينَ، أَشْهَدُ أَنْ لا إِلهَ إِلاَّ اللهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسولُهُ.", target: 1, audio: "audios/prayer_7.mp3", audio2: "audios2/recitation_307.mp3" }, 
         { id: 307, intro: "في التشهد الأول: ", text: "التَّحِيَّاتُ لِلَّهِ، الزَّاكِيَاتُ لِلَّهِ، الطَّيِّبَاتُ الصَّلَوَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ", target: 1, audio: "audios/prayer_.7.mp3", audio2: "audios2/recitation_30_7.mp3" }, 
         { id: 308, intro: "في التشهد الأخير والصلاة الإبراهيمية: ", text: " اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ.", target: 1, audio: "audios/prayer_9.mp3", audio2: "audios2/recitation_308.mp3" }, 
         { id: 309, intro: "قبل التسليم (الاستعاذة): ", text: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ جَهَنَّمَ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ.", target: 1, audio: "audios/prayer_10.mp3", audio2: "audios2/recitation_309.mp3" },   
@@ -103,7 +103,11 @@ const translations = {
         logo: "أذكاري", home: "الرئيسية", morning: "الصباح", evening: "المساء", 
         sleep: "النوم", prayer: "الصلاة", main_title: "أذكاري اليومية", 
         listen: "استماع", stop: "إيقاف", loading: "جاري...", back: "رجوع",
+        favorites_only: "المفضلة", reset: "إعادة", search_placeholder: "ابحث في الأذكار",
+        offline: "غير متصل", no_results: "لا توجد نتائج مطابقة",
+        reset_confirm: "هل تريد إعادة التصفير لهذه القائمة؟",
         footer_text: "أذكار الصباح والمساء هي حصن المسلم اليومي، داوم عليها لتنعم براحة البال والطمأنينة.",
+        quran_intro: "audios/quran_intro_placeholder.mp3",
         morning_intro: "audios/morning_intro_ar.mp3",
         evening_intro: "audios/evening_intro_ar.mp3",
         sleep_intro: "audios/sleep_intro_ar.mp3",
@@ -113,7 +117,11 @@ const translations = {
         logo: "Athkar", home: "Home", morning: "Morning", evening: "Evening", 
         sleep: "Sleep", prayer: "Prayer", main_title: "My Daily Athkar", 
         listen: "Listen", stop: "Stop", loading: "Loading...", back: "Back",
+        favorites_only: "Favorites", reset: "Reset", search_placeholder: "Search athkar",
+        offline: "Offline", no_results: "No matching results",
+        reset_confirm: "Reset this list?",
         footer_text: "Morning and evening Adhkar are the Muslim's daily fortress. Keep them to enjoy peace of mind and tranquility.",
+        quran_intro: "audios/quran_intro_placeholder.mp3",
         morning_intro: "audios/morning_intro_en.mp3",
         evening_intro: "audios/evening_intro_en.mp3",
         sleep_intro: "audios/sleep_intro_en.mp3",
@@ -123,7 +131,12 @@ const translations = {
         logo: "Athkar", home: "Accueil", morning: "Matin", evening: "Soir", 
         sleep: "Sommeil", prayer: "Prière", main_title: "Mes Athkars", 
         listen: "Écouter", stop: "Stop", loading: "Chargement...", back: "Retour",
+        favorites_only: "Favoris", reset: "Réinitialiser", search_placeholder: "Rechercher",
+        offline: "Hors ligne", no_results: "Aucun résultat",
+        reset_confirm: "Réinitialiser cette liste ?",
         footer_text: "Les Adhkars du matin et du soir sont la forteresse quotidienne du musulman.",
+
+        quran_intro: "audios/quran_intro_placeholder.mp3",
         morning_intro: "audios/morning_intro_fr.mp3",
         evening_intro: "audios/evening_intro_fr.mp3",
         sleep_intro: "audios/sleep_intro_fr.mp3",
@@ -131,10 +144,127 @@ const translations = {
     }
 };
 
+const STORAGE_KEYS = {
+    theme: 'athkarTheme',
+    lang: 'athkarLang',
+    progress: 'athkarProgressV1',
+    favorites: 'athkarFavoritesV1'
+};
+
 let currentLang = 'ar';
 let activeAudio = null;
 let currentCategory = '';
 let sessionCounts = {};
+let favoritesOnly = false;
+let searchTerm = '';
+let progressState = loadProgress();
+let favoritesState = loadFavorites();
+
+function getTodayKey() {
+    return new Date().toISOString().slice(0, 10);
+}
+
+function loadProgress() {
+    const raw = localStorage.getItem(STORAGE_KEYS.progress);
+    if (!raw) return { date: getTodayKey(), remaining: {} };
+    try {
+        const parsed = JSON.parse(raw);
+        return parsed && parsed.date ? parsed : { date: getTodayKey(), remaining: {} };
+    } catch {
+        return { date: getTodayKey(), remaining: {} };
+    }
+}
+
+function saveProgress() {
+    localStorage.setItem(STORAGE_KEYS.progress, JSON.stringify(progressState));
+}
+
+function ensureProgressDate() {
+    const today = getTodayKey();
+    if (progressState.date !== today) {
+        progressState = { date: today, remaining: {} };
+        saveProgress();
+    }
+}
+
+function getItemKey(category, index) {
+    return `${category}-${index}`;
+}
+
+function getRemainingCount(category, key, target) {
+    ensureProgressDate();
+    const categoryState = progressState.remaining[category] || {};
+    const stored = categoryState[key];
+    return typeof stored === 'number' ? stored : target;
+}
+
+function setRemainingCount(category, key, remaining) {
+    ensureProgressDate();
+    if (!progressState.remaining[category]) progressState.remaining[category] = {};
+    progressState.remaining[category][key] = remaining;
+    saveProgress();
+}
+
+function loadFavorites() {
+    const raw = localStorage.getItem(STORAGE_KEYS.favorites);
+    if (!raw) return { items: [] };
+    try {
+        const parsed = JSON.parse(raw);
+        return parsed && Array.isArray(parsed.items) ? parsed : { items: [] };
+    } catch {
+        return { items: [] };
+    }
+}
+
+function saveFavorites() {
+    localStorage.setItem(STORAGE_KEYS.favorites, JSON.stringify(favoritesState));
+}
+
+function isFavorite(key) {
+    return favoritesState.items.includes(key);
+}
+
+function toggleFavorite(key) {
+    if (isFavorite(key)) {
+        favoritesState.items = favoritesState.items.filter(item => item !== key);
+    } else {
+        favoritesState.items.push(key);
+    }
+    saveFavorites();
+    renderCards(currentCategory);
+}
+
+function handleSearch(value) {
+    searchTerm = value || '';
+    renderCards(currentCategory);
+}
+
+function toggleFavoritesFilter() {
+    favoritesOnly = !favoritesOnly;
+    const btn = document.getElementById('favorites-toggle');
+    if (btn) btn.classList.toggle('active', favoritesOnly);
+    renderCards(currentCategory);
+}
+
+function resetCurrentProgress() {
+    if (!currentCategory) return;
+    progressState.remaining[currentCategory] = {};
+    saveProgress();
+    renderCards(currentCategory);
+    updateProgress();
+}
+
+function updateOfflineIndicator() {
+    const indicator = document.getElementById('offline-indicator');
+    if (!indicator) return;
+    if (navigator.onLine) {
+        indicator.classList.add('hidden');
+    } else {
+        indicator.textContent = translations[currentLang]?.offline || 'Offline';
+        indicator.classList.remove('hidden');
+    }
+}
+
 
 /**
  * Handle Light/Dark Mode Toggle
@@ -147,10 +277,10 @@ function toggleTheme() {
     
     if (body.classList.contains('dark-mode')) {
         themeIcon.innerText = '☀️'; 
-        localStorage.setItem('theme', 'dark');
+        localStorage.setItem(STORAGE_KEYS.theme, 'dark');
     } else {
         themeIcon.innerText = '🌙';
-        localStorage.setItem('theme', 'light');
+        localStorage.setItem(STORAGE_KEYS.theme, 'light');
     }
 }
 
@@ -181,6 +311,13 @@ function changeLanguage(lang, btnElement) {
         }
     });
 
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang][key]) {
+            el.setAttribute('placeholder', translations[lang][key]);
+        }
+    });
+
     if (btnElement && indicator) {
         document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
         btnElement.classList.add('active');
@@ -190,6 +327,9 @@ function changeLanguage(lang, btnElement) {
         indicator.style.width = `${width}px`;
         indicator.style.transform = `translateX(${offset}px)`;
     }
+
+    localStorage.setItem(STORAGE_KEYS.lang, lang);
+    updateOfflineIndicator();
 
     if (currentCategory) {
         const pageTitle = document.getElementById('page-title');
@@ -210,8 +350,33 @@ function renderCards(category) {
     // Hide only the secondary (🎧) audio button for morning/evening/sleep
     const hideSecondaryAudio = ['morning', 'evening', 'sleep'].includes(category);
 
-    list.innerHTML = database[category].map(item => `
-        <div class="card athkar-card" id="card-${item.id}">
+    const query = (searchTerm || '').trim().toLowerCase();
+    const items = database[category].map((item, index) => ({
+        item,
+        index,
+        key: getItemKey(category, index)
+    }));
+
+    const filteredItems = items.filter(({ item, key }) => {
+        if (favoritesOnly && !isFavorite(key)) return false;
+        if (!query) return true;
+        const haystack = `${item.intro || ''} ${item.text || ''}`.toLowerCase();
+        return haystack.includes(query);
+    });
+
+    if (filteredItems.length === 0) {
+        list.innerHTML = `<div class="empty-state">${translations[currentLang].no_results}</div>`;
+        return;
+    }
+
+    list.innerHTML = filteredItems.map(({ item, key }) => {
+        const remaining = getRemainingCount(category, key, item.target);
+        const done = remaining === 0;
+        const favoriteClass = isFavorite(key) ? 'active' : '';
+
+        return `
+        <div class="card athkar-card ${done ? 'completed' : ''}" id="card-${key}">
+            <button class="favorite-btn ${favoriteClass}" onclick="toggleFavorite('${key}')">⭐</button>
             ${item.intro ? `<p class="intro-text text-rtl">${item.intro}</p>` : ''}
             <p class="arabic-text text-rtl">${item.text}</p>
             <div class="actions">
@@ -225,9 +390,31 @@ function renderCards(category) {
                 </button>
                 `}
 
-                <button class="count-btn" id="btn-${item.id}" onclick="handleCount(${item.id})">
-                    ${item.target}
+                <button class="count-btn ${done ? 'done' : ''}" id="btn-${key}" onclick="handleCount('${key}')">
+                    ${done ? '✓' : remaining}
                 </button>
+            </div>
+        </div>
+        `;
+    }).join('');
+}
+
+function renderQuran() {
+    const quranSection = document.getElementById('quran-section');
+    if (!quranSection) return;
+
+    if (!Array.isArray(database.quran) || database.quran.length === 0) {
+        quranSection.innerHTML = '';
+        return;
+    }
+
+    quranSection.innerHTML = database.quran.map(surah => `
+        <div class="card surah-container">
+            <h2 class="quran-heading text-rtl">${surah.surahName}</h2>
+            <div class="quran-words" aria-label="${surah.surahName}">
+                ${surah.ayahs.map(ayah => `
+                    <span class="ayah-text text-rtl" onclick="handleAudio('${ayah.audio}', this)">${ayah.text}</span>
+                `).join('')}
             </div>
         </div>
     `).join('');
@@ -242,36 +429,97 @@ function updateTheme(category) {
     if (category) body.classList.add(`theme-${category}`);
 }
 
+function setActiveSubNav(category) {
+    document.querySelectorAll('.sub-nav-item').forEach(btn => {
+        const btnCategory = btn.getAttribute('data-category');
+        const isActive = category && btnCategory === category;
+        btn.classList.toggle('active', Boolean(isActive));
+    });
+}
+
+function setFeaturedQuranCardVisible(isVisible) {
+    const featuredCard = document.getElementById('featured-quran-card');
+    if (!featuredCard) return;
+    featuredCard.classList.toggle('hidden', !isVisible);
+}
+
+function showCategory(category) {
+    setActiveSubNav(category);
+    setFeaturedQuranCardVisible(false);
+
+    if (category === 'quran') {
+        currentCategory = '';
+
+        document.getElementById('main-menu').classList.add('hidden');
+        document.getElementById('page-title').classList.add('hidden');
+        document.getElementById('athkar-list').classList.add('hidden');
+        document.getElementById('progress-container').classList.add('hidden');
+        document.getElementById('list-toolbar').classList.add('hidden');
+
+        const quranSection = document.getElementById('quran-section');
+        if (quranSection) quranSection.classList.remove('hidden');
+
+        renderQuran();
+
+        updateTheme(null);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        if (activeAudio) {
+            activeAudio.pause();
+            activeAudio = null;
+        }
+        return;
+    }
+
+    const quranSection = document.getElementById('quran-section');
+    if (quranSection) quranSection.classList.add('hidden');
+    loadAthkar(category);
+}
+
 function loadAthkar(category) {
     currentCategory = category;
     sessionCounts[category] = 0;
+    setFeaturedQuranCardVisible(false);
     
     document.getElementById('main-menu').classList.add('hidden');
     document.getElementById('page-title').classList.add('hidden');
     document.getElementById('athkar-list').classList.remove('hidden');
     document.getElementById('progress-container').classList.remove('hidden');
+    document.getElementById('list-toolbar').classList.remove('hidden');
+
+    const quranSection = document.getElementById('quran-section');
+    if (quranSection) quranSection.classList.add('hidden');
+
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = '';
+    searchTerm = '';
 
     updateTheme(category);
+    setActiveSubNav(category);
     renderCards(category);
     updateProgress();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function handleCount(id) {
-    const btn = document.getElementById(`btn-${id}`);
-    const card = document.getElementById(`card-${id}`);
+function handleCount(key) {
+    const btn = document.getElementById(`btn-${key}`);
+    const card = document.getElementById(`card-${key}`);
     if (!btn || btn.innerText === "✓") return;
 
-    let val = parseInt(btn.innerText);
+    let val = parseInt(btn.innerText, 10);
+    if (Number.isNaN(val)) return;
+
     if (val > 0) {
         val--;
-        btn.innerText = val === 0 ? "✓" : val;
+        const isDone = val === 0;
+        btn.innerText = isDone ? "✓" : val;
+        setRemainingCount(currentCategory, key, val);
         
         if (navigator.vibrate) navigator.vibrate(50);
         
-        if (val === 0) {
+        if (isDone) {
             btn.classList.add('done');
-            card.classList.add('completed');
+            if (card) card.classList.add('completed');
             sessionCounts[currentCategory]++;
             updateProgress();
         }
@@ -280,16 +528,28 @@ function handleCount(id) {
 
 function updateProgress() {
     if (!currentCategory || !database[currentCategory]) return;
-    const total = database[currentCategory].length;
-    const progress = (sessionCounts[currentCategory] / total) * 100;
+    const items = database[currentCategory];
+    const total = items.length;
+    const completed = items.reduce((count, item, index) => {
+        const key = getItemKey(currentCategory, index);
+        const remaining = getRemainingCount(currentCategory, key, item.target);
+        return count + (remaining === 0 ? 1 : 0);
+    }, 0);
+    sessionCounts[currentCategory] = completed;
+    const progress = total ? (completed / total) * 100 : 0;
     const bar = document.getElementById('progress-bar');
     if (bar) bar.style.width = `${progress}%`;
 }
 
 function handleAudio(src, btn) {
-    const isSecondary = btn.getAttribute('data-type') === 'secondary' || btn.innerText.includes('🎧');
+    const isAyah = btn && btn.classList && btn.classList.contains('ayah-text');
+    const isSecondary = !isAyah && (btn.getAttribute('data-type') === 'secondary' || btn.innerText.includes('🎧'));
     const playIcon = isSecondary ? "🎧" : "🔊";
     const cleanListenText = `${playIcon} ${translations[currentLang].listen}`;
+
+    const clearPlayingAyah = () => {
+        document.querySelectorAll('.ayah-text.playing').forEach(el => el.classList.remove('playing'));
+    };
     
     if (activeAudio) {
         activeAudio.pause();
@@ -302,76 +562,63 @@ function handleAudio(src, btn) {
             }
         });
 
+        clearPlayingAyah();
+
         if (activeAudio.src.includes(src)) {
             activeAudio = null;
-            btn.innerText = cleanListenText;
+            if (!isAyah) btn.innerText = cleanListenText;
             return;
         }
     }
     
     activeAudio = new Audio(src);
-    btn.innerText = "⏳ " + translations[currentLang].loading;
-    cacheAudioAsset(src);
+    activeAudio.preload = 'auto';
+    if (isAyah) {
+        btn.classList.add('playing');
+    } else {
+        btn.innerText = "⏳ " + translations[currentLang].loading;
+    }
     
     activeAudio.play()
         .then(() => { 
-            btn.innerText = "⏸ " + translations[currentLang].stop; 
+            if (!isAyah) btn.innerText = "⏸ " + translations[currentLang].stop;
         })
         .catch(() => { 
-            btn.innerText = "❌ Error"; 
-            setTimeout(() => { btn.innerText = cleanListenText; }, 2000);
+            if (isAyah) {
+                btn.classList.remove('playing');
+            } else {
+                btn.innerText = "❌ Error";
+                setTimeout(() => { btn.innerText = cleanListenText; }, 2000);
+            }
+            activeAudio = null;
         });
 
     activeAudio.onended = () => {
-        btn.innerText = cleanListenText;
+        clearPlayingAyah();
+        if (!isAyah) btn.innerText = cleanListenText;
         activeAudio = null;
     };
 }
 
-function cacheAudioAsset(src) {
-    if (!('serviceWorker' in navigator)) return;
-    const controller = navigator.serviceWorker.controller;
-    if (!controller) return;
-    controller.postMessage({ type: 'CACHE_AUDIO', url: src });
-}
-
-function cacheAllAudioAssets() {
-    if (!('serviceWorker' in navigator)) return;
-
-    const urls = new Set();
-    Object.values(translations).forEach(lang => {
-        Object.keys(lang).forEach(key => {
-            if (key.endsWith('_intro')) {
-                urls.add(lang[key]);
-            }
-        });
-    });
-
-    Object.values(database).forEach(list => {
-        list.forEach(item => {
-            if (item.audio) urls.add(item.audio);
-            if (item.audio2) urls.add(item.audio2);
-        });
-    });
-
-    navigator.serviceWorker.ready.then(reg => {
-        if (!reg.active) return;
-        reg.active.postMessage({ type: 'CACHE_AUDIO_LIST', urls: Array.from(urls) });
-        localStorage.setItem('offline_audio_cached', 'true');
-    });
-}
-
 function showMainMenu() {
+    setFeaturedQuranCardVisible(true);
     document.getElementById('main-menu').classList.remove('hidden');
     document.getElementById('page-title').classList.remove('hidden');
     document.getElementById('athkar-list').classList.add('hidden');
     document.getElementById('progress-container').classList.add('hidden');
+    document.getElementById('list-toolbar').classList.add('hidden');
+
+    const quranSection = document.getElementById('quran-section');
+    if (quranSection) quranSection.classList.add('hidden');
     
     const bar = document.getElementById('progress-bar');
     if (bar) bar.style.width = "0%";
     
     updateTheme(null); // Clear category theme
+    setActiveSubNav(null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    searchTerm = '';
     
     if(activeAudio) { 
         activeAudio.pause(); 
@@ -388,28 +635,24 @@ function resetAll() {
  */
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Restore Theme Preference
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem(STORAGE_KEYS.theme);
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
         document.getElementById('theme-icon').innerText = '☀️';
     }
 
     // 2. Initial Language Setup
-    const activeBtn = document.querySelector('.lang-btn.active');
-    if (activeBtn) {
-        changeLanguage(currentLang, activeBtn);
+    const savedLang = localStorage.getItem(STORAGE_KEYS.lang);
+    if (savedLang && translations[savedLang]) {
+        currentLang = savedLang;
     }
+    const activeBtn = document.querySelector(`.lang-btn[data-lang="${currentLang}"]`) || document.querySelector('.lang-btn.active');
+    if (activeBtn) changeLanguage(currentLang, activeBtn);
 
-    // 3. Register Service Worker for offline support
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js').catch(() => {
-            // Silent fail; app still works without SW in native shell.
-        });
-    }
+    // 3. Offline indicator
+    updateOfflineIndicator();
+    window.addEventListener('online', updateOfflineIndicator);
+    window.addEventListener('offline', updateOfflineIndicator);
 
-    // 4. Cache all audio for full offline use (first run only)
-    if (!localStorage.getItem('offline_audio_cached')) {
-        cacheAllAudioAssets();
-    }
+    // 4. Service worker (removed for APK build)
 });
-

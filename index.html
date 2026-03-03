@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#6366f1">
+    <meta name="theme-color" content="#4f46e5">
     <title>أذكاري | Athkar App</title>
-    <link rel="icon" type="image/jpeg" href="icon.jpg">
-    <link rel="apple-touch-icon" href="icon.jpg">
-    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,18 +26,20 @@
 
                 <div class="lang-switcher">
                     <div id="lang-indicator" class="lang-indicator"></div>
-                    <button class="lang-btn active" onclick="changeLanguage('ar', this)">عربي</button>
-                    <button class="lang-btn" onclick="changeLanguage('en', this)">EN</button>
-                    <button class="lang-btn" onclick="changeLanguage('fr', this)">FR</button>
+                    <button class="lang-btn active" data-lang="ar" onclick="changeLanguage('ar', this)">عربي</button>
+                    <button class="lang-btn" data-lang="en" onclick="changeLanguage('en', this)">EN</button>
+                    <button class="lang-btn" data-lang="fr" onclick="changeLanguage('fr', this)">FR</button>
                 </div>
+
+                <div id="offline-indicator" class="offline-indicator hidden" aria-live="polite"></div>
             </div>
         </div>
         
         <nav class="sub-nav">
-            <button class="sub-nav-item" onclick="loadAthkar('morning')" data-i18n="morning">الصباح</button>
-            <button class="sub-nav-item" onclick="loadAthkar('evening')" data-i18n="evening">المساء</button>
-            <button class="sub-nav-item" onclick="loadAthkar('sleep')" data-i18n="sleep">النوم</button>
-            <button class="sub-nav-item" onclick="loadAthkar('prayer')" data-i18n="prayer">الصلاة</button>
+            <button class="sub-nav-item" onclick="showCategory('morning')" data-category="morning" data-i18n="morning">الصباح</button>
+            <button class="sub-nav-item" onclick="showCategory('evening')" data-category="evening" data-i18n="evening">المساء</button>
+            <button class="sub-nav-item" onclick="showCategory('sleep')" data-category="sleep" data-i18n="sleep">النوم</button>
+            <button class="sub-nav-item" onclick="showCategory('prayer')" data-category="prayer" data-i18n="prayer">الصلاة</button>
         </nav>
     </header>
 
@@ -89,7 +88,13 @@
             </div>
         </main>
 
+        <div id="list-toolbar" class="list-toolbar hidden">
+            <button class="ghost-btn danger" onclick="resetCurrentProgress()" data-i18n="reset">إعادة</button>
+        </div>
+
         <section id="athkar-list" class="athkar-list hidden"></section>
+
+        <section id="quran-section" class="quran-section hidden" aria-live="polite"></section>
     </div>
 
     <footer class="app-footer">
