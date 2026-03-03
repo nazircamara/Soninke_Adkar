@@ -1,126 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" id="html-tag">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#4f46e5">
-    <title>أذكاري | Athkar App</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; URL=https://nazircamara.github.io/Athkar_App/">
+    <title>Redirecting...</title>
+    <script>
+        window.location.href = 'https://nazircamara.github.io/Athkar_App/';
+    </script>
 </head>
 <body>
-    <header class="navbar">
-        <div id="progress-container" class="progress-container hidden">
-            <div id="progress-bar" class="progress-bar"></div>
-        </div>
-        
-        <div class="nav-content">
-            <div class="logo" onclick="showMainMenu()">
-                <span class="logo-emoji">📖</span>
-                <span class="logo-text" data-i18n="logo">أذكاري</span>
-            </div>
-
-            <div class="header-actions">
-                <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" title="تبديل الوضع">
-                    <span id="theme-icon">🌙</span>
-                </button>
-
-                <div class="lang-switcher">
-                    <div id="lang-indicator" class="lang-indicator"></div>
-                    <button class="lang-btn active" data-lang="ar" onclick="changeLanguage('ar', this)">عربي</button>
-                    <button class="lang-btn" data-lang="en" onclick="changeLanguage('en', this)">EN</button>
-                    <button class="lang-btn" data-lang="fr" onclick="changeLanguage('fr', this)">FR</button>
-                </div>
-
-                <div id="offline-indicator" class="offline-indicator hidden" aria-live="polite"></div>
-            </div>
-        </div>
-        
-        <nav class="sub-nav">
-            <button class="sub-nav-item" onclick="showCategory('morning')" data-category="morning" data-i18n="morning">الصباح</button>
-            <button class="sub-nav-item" onclick="showCategory('evening')" data-category="evening" data-i18n="evening">المساء</button>
-            <button class="sub-nav-item" onclick="showCategory('sleep')" data-category="sleep" data-i18n="sleep">النوم</button>
-            <button class="sub-nav-item" onclick="showCategory('prayer')" data-category="prayer" data-i18n="prayer">الصلاة</button>
-        </nav>
-    </header>
-
-    <div class="container">
-        <h1 id="page-title" class="hero-title" data-i18n="main_title">أذكاري اليومية</h1>
-
-        <main id="main-menu" class="category-grid">
-            <div class="card category-card morning" onclick="loadAthkar('morning')">
-                <div class="card-content">
-                    <span class="icon">☀️</span>
-                    <h2 data-i18n="morning">أذكار الصباح</h2>
-                </div>
-                <button class="home-audio-btn" onclick="playHomePreview(event, 'morning', this)">
-                    🔊 <span data-i18n="listen">استماع</span>
-                </button>
-            </div>
-
-            <div class="card category-card evening" onclick="loadAthkar('evening')">
-                <div class="card-content">
-                    <span class="icon">🌙</span>
-                    <h2 data-i18n="evening">أذكار المساء</h2>
-                </div>
-                <button class="home-audio-btn" onclick="playHomePreview(event, 'evening', this)">
-                    🔊 <span data-i18n="listen">استماع</span>
-                </button>
-            </div>
-
-            <div class="card category-card sleep" onclick="loadAthkar('sleep')">
-                <div class="card-content">
-                    <span class="icon">🛌</span>
-                    <h2 data-i18n="sleep">أذكار النوم</h2>
-                </div>
-                <button class="home-audio-btn" onclick="playHomePreview(event, 'sleep', this)">
-                    🔊 <span data-i18n="listen">استماع</span>
-                </button>
-            </div>
-
-            <div class="card category-card prayer" onclick="loadAthkar('prayer')">
-                <div class="card-content">
-                    <span class="icon">🕌</span>
-                    <h2 data-i18n="prayer">أذكار الصلاة</h2>
-                </div>
-                <button class="home-audio-btn" onclick="playHomePreview(event, 'prayer', this)">
-                    🔊 <span data-i18n="listen">استماع</span>
-                </button>
-            </div>
-        </main>
-
-        <div id="list-toolbar" class="list-toolbar hidden">
-            <button class="ghost-btn danger" onclick="resetCurrentProgress()" data-i18n="reset">إعادة</button>
-        </div>
-
-        <section id="athkar-list" class="athkar-list hidden"></section>
-
-        <section id="quran-section" class="quran-section hidden" aria-live="polite"></section>
-    </div>
-
-    <footer class="app-footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <span class="logo-emoji">📖</span>
-                <span class="logo-text" data-i18n="logo">أذكاري</span>
-            </div>
-            
-            <p class="footer-tagline" data-i18n="footer_text">
-                أذكار الصباح والمساء هي حصن المسلم اليومي، داوم عليها لتنعم براحة البال والطمأنينة.
-            </p>
-
-            <div class="footer-links">
-                <button class="footer-link-btn" onclick="loadAthkar('morning')" data-i18n="morning">الصباح</button>
-                <button class="footer-link-btn" onclick="loadAthkar('evening')" data-i18n="evening">المساء</button>
-                <button class="footer-link-btn" onclick="loadAthkar('sleep')" data-i18n="sleep">النوم</button>
-                <button class="footer-link-btn" onclick="loadAthkar('prayer')" data-i18n="prayer">الصلاة</button>
-            </div>
-
-            <div class="copyright">
-                &copy; 2026 <span data-i18n="logo">أذكاري</span>. جميع الحقوق محفوظة.
-            </div>
-        </div>
-    </footer>
-
-    <script src="app.js"></script>
+    <p>Moving to our new home... if you are not redirected, <a href="https://nazircamara.github.io/Athkar_App/">click here</a>.</p>
 </body>
 </html>
